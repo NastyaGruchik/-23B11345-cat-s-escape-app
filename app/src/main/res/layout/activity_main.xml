@@ -40,152 +40,152 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/virus0"
+        android:id="@+id/dogs0"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_margin="10dp"
-        android:layout_above="@id/virus1">
+        android:layout_above="@id/dogs1">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus00"
+            android:id="@+id/main_IMG_dog00"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus01"
+            android:id="@+id/main_IMG_dog01"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus02"
+            android:id="@+id/main_IMG_dog02"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/virus1"
+        android:id="@+id/dogs1"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_margin="10dp"
-        android:layout_above="@id/virus2">
+        android:layout_above="@id/dogs2">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus10"
+            android:id="@+id/main_IMG_dog10"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus11"
+            android:id="@+id/main_IMG_dog11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus12"
+            android:id="@+id/main_IMG_dog12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/virus2"
+        android:id="@+id/dogs2"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_margin="10dp"
-        android:layout_above="@id/virus3">
+        android:layout_above="@id/dogs3">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus20"
+            android:id="@+id/main_IMG_dog20"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus21"
+            android:id="@+id/main_IMG_dog21"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus22"
+            android:id="@+id/main_IMG_dog22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/virus3"
+        android:id="@+id/dogs3"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_margin="10dp"
-        android:layout_above="@+id/people"
+        android:layout_above="@+id/cats"
         >
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus30"
+            android:id="@+id/main_IMG_dog30"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus31"
+            android:id="@+id/main_IMG_dog31"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_virus32"
+            android:id="@+id/main_IMG_dog32"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_virus" />
+            app:srcCompat="@drawable/ic_dog" />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/people"
+        android:id="@+id/cats"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="70dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_person1"
+            android:id="@+id/main_IMG_cat1"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_person" />
+            app:srcCompat="@drawable/ic_cat" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_person2"
+            android:id="@+id/main_IMG_cat2"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_person" />
+            app:srcCompat="@drawable/ic_cat" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_person3"
+            android:id="@+id/main_IMG_cat3"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_person" />
+            app:srcCompat="@drawable/ic_cat" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

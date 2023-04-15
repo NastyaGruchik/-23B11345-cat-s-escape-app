@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton rButton;
     private ShapeableImageView[] hearts;
     private int lives=3;
-    protected ShapeableImageView[][] viruses;
-    private ShapeableImageView[] people;
+    protected ShapeableImageView[][] dogs;
+    private ShapeableImageView[] cats;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,21 +61,21 @@ public class MainActivity extends AppCompatActivity {
     private void falling() {
         for (int i=0;i<COLONS;i++){
             for(int j=ROWS-1;j>=0;j--){
-                if (j==ROWS-1 && viruses[ROWS-1][i].getVisibility()==View.VISIBLE){
-                    viruses[ROWS-1][i].setVisibility(View.INVISIBLE);
+                if (j==ROWS-1 && dogs[ROWS-1][i].getVisibility()==View.VISIBLE){
+                    dogs[ROWS-1][i].setVisibility(View.INVISIBLE);
                     checkInfected(i);
                 }
-                if(viruses[j][i].getVisibility()==View.VISIBLE){
-                    viruses[j+1][i].setVisibility(View.VISIBLE);
-                    viruses[j][i].setVisibility(View.INVISIBLE);
+                if(dogs[j][i].getVisibility()==View.VISIBLE){
+                    dogs[j+1][i].setVisibility(View.VISIBLE);
+                    dogs[j][i].setVisibility(View.INVISIBLE);
                 }
             }
         }
         int randomNum = (int) (Math.random() * (COLONS ));
-        viruses[0][randomNum].setVisibility(View.VISIBLE);
+        dogs[0][randomNum].setVisibility(View.VISIBLE);
     }
     private void checkInfected(int i) {
-        if(people[i].getVisibility()==View.VISIBLE){
+        if(cats[i].getVisibility()==View.VISIBLE){
             if(lives!=0){
                 Toast toast= Toast.makeText(MainActivity.this,"oh no", Toast.LENGTH_LONG);
                 toast.show();
@@ -95,33 +95,33 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void goLeft() {
-        for (int i=1;i<people.length;i++){
-            if (people[i].getVisibility()== View.VISIBLE){
-                people[i].setVisibility(View.INVISIBLE);
-                people[i-1].setVisibility(View.VISIBLE);
+        for (int i=1;i<cats.length;i++){
+            if (cats[i].getVisibility()== View.VISIBLE){
+                cats[i].setVisibility(View.INVISIBLE);
+                cats[i-1].setVisibility(View.VISIBLE);
             }
         }
     }
     private void goRight() {
-        if (people[1].getVisibility()==View.VISIBLE){
-            people[1].setVisibility(View.INVISIBLE);
-            people[2].setVisibility(View.VISIBLE);
+        if (cats[1].getVisibility()==View.VISIBLE){
+            cats[1].setVisibility(View.INVISIBLE);
+            cats[2].setVisibility(View.VISIBLE);
         }
-        else if (people[0].getVisibility()==View.VISIBLE) {
-            people[0].setVisibility(View.INVISIBLE);
-            people[1].setVisibility(View.VISIBLE);
+        else if (cats[0].getVisibility()==View.VISIBLE) {
+            cats[0].setVisibility(View.INVISIBLE);
+            cats[1].setVisibility(View.VISIBLE);
         }
     }
 
     private void startView() {
         for (int i =0; i<COLONS;i++){
             for(int j=0; j<ROWS;j++){
-                viruses[j][i].setVisibility(View.INVISIBLE);
+                dogs[j][i].setVisibility(View.INVISIBLE);
             }
         }
-        people[0].setVisibility(View.INVISIBLE);
-        people[1].setVisibility(View.VISIBLE);
-        people[2].setVisibility(View.INVISIBLE);
+        cats[0].setVisibility(View.INVISIBLE);
+        cats[1].setVisibility(View.VISIBLE);
+        cats[2].setVisibility(View.INVISIBLE);
     }
     private void findViews() {
 
@@ -132,16 +132,16 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.main_IMG_heart2),
                 findViewById(R.id.main_IMG_heart1)
         };
-        viruses = new ShapeableImageView[][]{
-                {findViewById(R.id.main_IMG_virus00),findViewById(R.id.main_IMG_virus01),findViewById(R.id.main_IMG_virus02)},
-                {findViewById(R.id.main_IMG_virus10),findViewById(R.id.main_IMG_virus11),findViewById(R.id.main_IMG_virus12)},
-                {findViewById(R.id.main_IMG_virus20),findViewById(R.id.main_IMG_virus21),findViewById(R.id.main_IMG_virus22)},
-                {findViewById(R.id.main_IMG_virus30),findViewById(R.id.main_IMG_virus31),findViewById(R.id.main_IMG_virus32)}
+        dogs = new ShapeableImageView[][]{
+                {findViewById(R.id.main_IMG_dog00),findViewById(R.id.main_IMG_dog01),findViewById(R.id.main_IMG_dog02)},
+                {findViewById(R.id.main_IMG_dog10),findViewById(R.id.main_IMG_dog11),findViewById(R.id.main_IMG_dog12)},
+                {findViewById(R.id.main_IMG_dog20),findViewById(R.id.main_IMG_dog21),findViewById(R.id.main_IMG_dog22)},
+                {findViewById(R.id.main_IMG_dog30),findViewById(R.id.main_IMG_dog31),findViewById(R.id.main_IMG_dog32)}
         };
-        people = new ShapeableImageView[]{
-                findViewById(R.id.main_IMG_person1),
-                findViewById(R.id.main_IMG_person2),
-                findViewById(R.id.main_IMG_person3)
+        cats = new ShapeableImageView[]{
+                findViewById(R.id.main_IMG_cat1),
+                findViewById(R.id.main_IMG_cat2),
+                findViewById(R.id.main_IMG_cat3)
         };
     }
 }
